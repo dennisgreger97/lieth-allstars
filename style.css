@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.topheader {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to right, black, darkred, red);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.topheader span {
+    position: absolute;
+    white-space: nowrap;
+    right: -25%;
+    animation: moveText 9s linear infinite;
+    margin-right: 100px;
+}
+
+@keyframes moveText {
+    0% {
+        right: -25%;
+    }
+    100% {
+        right: 125%;
+    }
+}
+
+/* ///////////////////////////////////////// */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarleft .navleft {
+    display: flex;
+    font-size: 2rem;
+}
+
+.navbarleft .navleft li {
+    position: relative;
+}
+
+.navbarleft .navleft li a{
+    margin-right: 4rem;
+    text-decoration: none;
+    color: black;
+}
+.navbarleft .navleft li a:hover {
+    background-color: rgb(189, 1, 1);
+}
+
+/* //////////////////////////////// */
+
+.logobar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logobar h1 a{
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.logobar img {
+    width: 8rem;
+}
+
+/* ///////////////////////// */
+
+.navbarright .navright {
+    display: flex;
+    font-size: 2rem;
+}
+
+.navbarright .navright li {
+    position: relative;
+}
+
+.navbarright .navright li a{
+    margin-right: 4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navbarright .navright li a:hover {
+    background-color: rgb(189, 1, 1);
+}
+
+.navbarleft .navleft .dropdown .dropdown-content li{
+ font-size: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(255, 255, 255, 0.9);
+    list-style: none;
+    width: max-content;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* /////////////////////////// */
+
+.iconbar {
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to right, black, darkred, red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconbar a {
+    font-size: 3rem;
+    color: white;
+    padding: 0 4rem
+}
+
+.vereinsfotodiv {
+    border: 1px green solid;
+    height: 40rem;
+}
+
+.vereinsfoto {
+    width: 100%;
+    height: 40rem;
+    
+}
+
+.meetbar {
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to right, black, darkred, red);
+}
+
+.navbarright .navright .dropdown .dropdown-content li{
+    font-size: 1.5rem;
+   }
