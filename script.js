@@ -25,3 +25,20 @@ document.querySelectorAll(".team").forEach((card) => {
     this.classList.toggle("flipped"); /* Flip-Klasse wird umgeschaltet */
   });
 });
+
+const burgerMenu = document.querySelector(".burger-menu");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+burgerMenu.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("show"); // Toggle Dropdown Menü
+});
+
+document.addEventListener("click", function (event) {
+  // Wenn der Klick außerhalb des Burger-Menüs und Dropdown-Menüs ist
+  if (
+    !burgerMenu.contains(event.target) &&
+    !dropdownMenu.contains(event.target)
+  ) {
+    dropdownMenu.classList.remove("show");
+  }
+});
