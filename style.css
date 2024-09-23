@@ -366,11 +366,11 @@
     grid-template-columns: 1fr;
   }
   .footerbar {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .footerbar a {
-    font-size: 1rem;
-    margin: 0 1rem;
+    font-size: 0.5rem;
+    margin: 0 0.5rem;
   }
 }
 
@@ -389,8 +389,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .footerbar {
+    font-size: 2rem;
+  }
+
   .footerbar a {
-    margin: 0 2rem;
+    font-size: 1rem;
+    margin: 0 1rem;
   }
   .team {
     height: 290px;
