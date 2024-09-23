@@ -19,3 +19,9 @@ document.addEventListener("scroll", function () {
     text2.style.transform = `translateX(${moveLeft}%)`;
   }
 });
+
+document.querySelectorAll(".team").forEach((card) => {
+  card.addEventListener("click", function () {
+    this.classList.toggle("flipped"); /* Flip-Klasse wird umgeschaltet */
+  });
+});
