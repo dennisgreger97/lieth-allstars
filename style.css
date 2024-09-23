@@ -419,6 +419,10 @@
   .burger-menu {
     padding: 0 1rem;
   }
+  .meetbar1,
+  .meetbar2 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 421px) and (max-width: 600px) {
